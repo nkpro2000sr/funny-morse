@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "funny-morse"
+version = "0.0.1"
+description = "Converts text to morse code signals [audio, window, keyboardleds, led, servo]"
+license = "MIT"
+authors = ["Naveen S R <srnaveen2k@yahoo.com>"]
+maintainers = ["Naveen S R <srnaveen2k@yahoo.com>"]
+readme = "README.md"
+repository = "https://github.com/nkpro2000sr/funny-morse"
+packages = [
+    { include = "funny_morse"},
+]
+keywords = ["morse", "funny", "morse2signal", "all", "play-show-tap"]
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+numpy = ">=1.7"
+sounddevice = ">=0.3"
+wavio = ">=0.0.1"
+pynput = ">=1.6"
+rshell = ">=0.0.20"
+
+[tool.poetry.dev-dependencies]
+
+[tool.black]
+line-length = 99
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
